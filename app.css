@@ -74,6 +74,7 @@ body {
 
 .pricing-plan {
     border-bottom: 1px solid #e1f1ff;
+   
 }
 
 .pricing-plan:last-child {
@@ -132,13 +133,13 @@ body {
 
 }
 
-.pricing-button .is-featured {
+.pricing-button.is-featured {
     background-color: #48aaff;
     color: white;
 
 }
 
-.pricing-button .is-featured:hover .pricing-button .is-featured:focus {
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
     background-color: #269aff;
     color: white;
     
@@ -147,14 +148,20 @@ body {
 @media (min-width: 900px){
     .panel {
         flex-direction: row;
+        max-width: 1200px;
+        align-items: center;
+        display: flex;
+
     }
     .pricing-plan {
         border-bottom: none;
         border-right: 1px solid #e1f1ff;
-        padding: 25px 50px;
+        
     }
     .pricing-plan:last-child {
         border-right: none;
     }
-
+    .princing-img {
+        width: 320px;
+    }
 }
